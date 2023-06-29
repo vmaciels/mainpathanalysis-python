@@ -2,7 +2,6 @@ import sys
 import networkx as nx
 import numpy as np
 
-#finds all sources and sinks in the graph
 def sources(g):
     s=[]
     for node in list(g):
@@ -46,6 +45,7 @@ def spc(g):
     return weightdicts
 
 def pathweight(path, weights):
+    ''''''
     out=0
     for link in unpackpath(path=path):
         out+=weights[link]
