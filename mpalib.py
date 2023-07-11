@@ -52,6 +52,7 @@ def pathweight(path, weights):
     return out
 
 def main_path(g,source=None):
+    '''Calculates the main path from all of the sources given to any sink'''
     if source==None:
         source=sources(g)
 
